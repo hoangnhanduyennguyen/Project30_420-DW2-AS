@@ -16,7 +16,7 @@ In this project, I have created a website for a Vietnamese restaurant call Lavn.
 
 ### Authors
 
-..* Hoang Nhan Duyen Nguyen
+* Hoang Nhan Duyen Nguyen
 
 ### License
 
