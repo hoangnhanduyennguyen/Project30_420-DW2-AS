@@ -1,0 +1,111 @@
+/*Import new fonts*/
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+* {
+  box-sizing: border-box;
+}
+
+header,section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+}
+/*Header padding*/
+header .navbar{
+  padding-top: 0;
+}
+
+header .nav-item:last-child {
+  padding-right: 2em;
+}
+
+header .nav-item {
+  padding: 0.5em 1em 0.2em 1em;
+}
+
+header .navbar-brand {
+  padding: 0 1em;
+}
+
+/*Navbrand style*/
+header h2.navbar-brand{
+  font-size: 2.7em;
+  color: #000;
+  font-family: var(--Lobster);
+  margin: 0;
+}
+
+/*Links style*/
+header a {
+    font-family: var(--Sniglet-font);
+    font-size: 1.2em;
+    color: #000;
+}
+
+header a.home{
+  border: 2.4px solid darkgray;
+  border-radius: 0.5em;
+}
+
+header a.home:hover{
+  border: 2.4px solid darkgray;
+  border-radius: 0em;
+}
+
+header .nav-link:hover {
+  border-bottom: 2.4px solid darkgray;
+  color: #000;
+}
+
+header .nav-link{
+  padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+/*Header background image*/
+header {
+  background-image:  url(../images/header_background.jpg);
+  background-attachment: fixed;
+}
+
+/*Header left colum*/
+header .row .col-md-7 {
+    padding: 22vmin 1vmin 35vmin;
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+/*Header right colum*/
+header .row .col-md-5 {
+    padding: 17vmin 1vmin;
+}
+  
+header .row .col-md-5 img {
+    width: 100%;
+}
+
