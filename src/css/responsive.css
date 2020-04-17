@@ -1,20 +1,31 @@
-@media only screen and (max-width: 1024px) {
-    header .row .col-md-7 {
-        padding: 35vmin 1vmin 57vmin;
-    }
-    header .row .col-md-5 {
-        padding: 32vmin 1vmin;
-    }
 
+@media only screen and ( max-width: 1280px){
+  header a{
+    font-size: 0.9em;
+  }
+  .section-1 .row .col-md-6 .panel {
+    padding: 17vmin 17vmin;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-    header h2.navbar-brand{
-    padding-left: 0.3em;
-    padding-top: 0.1em;
+@media only screen and (max-width: 1024px) {
+  div.middle{
+    position: absolute;
+    top: 68%;
+    left: 50%;
   }
-  /* Change hover effect on navbar*/
-  header a.home{
+  
+  header .row .col-md-5 {
+    padding: 25vmin 1vmin;
+  }
+
+  .section-1 .row .col-md-6 .panel {
+    padding: 10vmin 13vmin;
+  }
+}
+@media only screen and (max-width: 768px) {
+    /* Change hover effect on navbar*/
+   header a.home{
     border: none;
     padding-top: 1em;
   }
@@ -23,18 +34,92 @@
     border: none;
     color: darkgray;
   }
-  
+
+  header a{
+    font-size: 1.2em;
+  }
+
   header .nav-link:hover {
     border-bottom: none;
     color: darkgray;
   }
-}
-
-@media only screen and (max-width: 375px) {
+    header .navbar-brand {
+      padding-left: 1rem;
+    }
+  
     header .row .col-md-7 {
-        padding: 40vmin 1vmin 57vmin;
+      padding: 25vmin 5vmin;
     }
-    header .container .col-md-7 h1 {
-        font-size: 12vmin;
+
+    div.middle{
+      position: absolute;
+      top: 83%;
     }
-}
+  
+    header .row .col-md-5 {
+      padding: 30vmin 1vmin;
+    }
+    
+    .section-1 .row .col-md-6 .panel {
+      position: initial;
+      width: initial;
+      height: initial;
+      padding: 3vmin;
+    }
+    .section-2 .cover {
+      background-position: -25vmin -10vmin;
+    }
+    .numbers .rect {
+      width: 10rem;
+      height: 8rem;
+    }
+    .numbers .rect h1 {
+      font-size: 2rem;
+    }
+  
+    .section-3 {
+      height: inherit;
+      padding: 10vmin !important;
+    }
+    .section-3 .row h1 {
+      padding: 6vmin 4vmin;
+    }
+    .section-3 .platform .col-md-6 {
+      text-align: center !important;
+    }
+    .section-3 .desktop i {
+      font-size: 8vmin;
+    }
+    .section-4 .carousel-item {
+      padding-left: 0.6rem;
+    }
+    footer .row .col-md-2 {
+      margin-top: 8vmin;
+    }
+  }
+  
+  /* screen size 375px */
+  
+  @media only screen and (max-width: 375px) {
+    header .row .col-md-7 h1 {
+      font-size: 3em;
+    }
+
+    div.middle{
+      position: absolute;
+      top: 90%;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+      padding: 15vmin;
+    }
+    .section-4 .card {
+      width: 18em;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .section-4 .carousel-inner {
+      margin-left: -4vmin;
+    }
+  }

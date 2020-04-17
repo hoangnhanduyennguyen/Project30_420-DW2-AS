@@ -1,5 +1,19 @@
-/*Import new fonts*/
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+@font-face {
+  font-family: KGHappySolid;
+  src: url(../css/fonts/KG\ HAPPY\ Solid.ttf);
+}
+
+@font-face {
+  font-family: KGHappy;
+  src: url(../css/fonts/KGHAPPY.ttf);
+}
+
+@font-face {
+  font-family: KGHappyShadow;
+  src: url(../css/fonts/KGHAPPYShadows.ttf);
+}
 
 * {
   box-sizing: border-box;
@@ -15,7 +29,8 @@ header,section {
   --Patua: "Patua One", cursive;
   --Lobster: "lobster", cursive;
 }
-/*Header padding*/
+
+/*Navigation bar padding*/
 header .navbar{
   padding-top: 0;
 }
@@ -32,81 +47,181 @@ header .navbar-brand {
   padding: 0 1em;
 }
 
-/*Navbrand style*/
+header .nav-link{
+  padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+/*Navigation bar style*/
 header h2.navbar-brand{
   font-size: 2.7em;
   color: #000;
-  font-family: var(--Lobster);
+  font-family: KGHappy;
   margin: 0;
 }
 
-/*Links style*/
 header a {
-    font-family: var(--Sniglet-font);
-    font-size: 1.2em;
-    color: #000;
+  font-family: KGHappySolid;
+  font-size: 1.2em;
+  color: #000;
 }
 
 header a.home{
-  border: 2.4px solid darkgray;
+  border: 2.4px solid gray;
   border-radius: 0.5em;
 }
 
 header a.home:hover{
-  border: 2.4px solid darkgray;
+  border: 2.4px solid gray;
   border-radius: 0em;
 }
 
 header .nav-link:hover {
-  border-bottom: 2.4px solid darkgray;
+  border-bottom: 2.4px solid gray;
   color: #000;
-}
-
-header .nav-link{
-  padding: 0.1em 0.5em 0.1em 0.5em;
 }
 
 header .nav-link:hover {
   color: black;
 }
 
-/*Header background image*/
+/*Header style*/
+header .row .col-md-7 {
+  padding: 20vmin 1vmin 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 17vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 100%;
+}
+
 header {
   background-image:  url(../images/header_background.jpg);
   background-attachment: fixed;
-}
-
-/*Header left colum*/
-header .row .col-md-7 {
-    padding: 22vmin 1vmin 35vmin;
-}
-
-header .container .col-md-7 {
-  font-family: "Rubik", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 header .container .col-md-7 h6 {
+  font-family: "Rubik", sans-serif;
   padding: 1vmin;
   letter-spacing: 4px;
 }
 
 header .container .col-md-7 h1 {
+  font-family: KGHappySolid;
   font-size: 8.5vmin;
-  font-weight: bold;
   padding: 0.1em 0em;
 }
 
-
 header .container .col-md-7 p {
+  font-family: "Rubik", sans-serif;
   padding: 1vmin 5vmin;
 }
 
-/*Header right colum*/
-header .row .col-md-5 {
-    padding: 17vmin 1vmin;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.815);
+  transition: all 1.5s ease;
 }
-  
-header .row .col-md-5 img {
-    width: 100%;
+
+div.middle{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
+.button{
+  background: none;
+  border: 3px solid #000;
+  font-family: KGHappySolid;
+  text-transform: uppercase;
+  padding: 17px 27px;
+  min-width: 200px;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+
+.button:hover{
+  color: #fff;
+}
+
+.button::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.button1::before{
+  transform: scaleY(0);
+}
+
+.button1:hover::before{
+  transform: scaleY(1);
+}
+
+/********** section 1 **************/
+
+.section-1 {
+  padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .headchef img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 20vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/**********Section-2****************/
+.section-2 .carousel-item{
+  height: 93vh;
+}
+
+
 
