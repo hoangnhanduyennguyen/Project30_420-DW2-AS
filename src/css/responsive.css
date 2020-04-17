@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1024px) {
+    header .row .col-md-7 {
+        padding: 35vmin 1vmin 57vmin;
+    }
+    header .row .col-md-5 {
+        padding: 32vmin 1vmin;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    header h2.navbar-brand{
+    padding-left: 0.3em;
+    padding-top: 0.1em;
+  }
+  /* Change hover effect on navbar*/
+  header a.home{
+    border: none;
+    padding-top: 1em;
+  }
+  
+  header a.home:hover{
+    border: none;
+    color: darkgray;
+  }
+  
+  header .nav-link:hover {
+    border-bottom: none;
+    color: darkgray;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+    header .row .col-md-7 {
+        padding: 40vmin 1vmin 57vmin;
+    }
+    header .container .col-md-7 h1 {
+        font-size: 12vmin;
+    }
+}
