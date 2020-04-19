@@ -1,33 +1,12 @@
 
-@media only screen and ( max-width: 1280px){
-  header a{
-    font-size: 0.9em;
-  }
-  .section-1 .row .col-md-6 .panel {
-    padding: 17vmin 17vmin;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 320px) and (max-width: 440px){
   div.middle{
     position: absolute;
-    top: 68%;
-    left: 50%;
+    top: 20rem;
   }
-  
-  header .row .col-md-5 {
-    padding: 25vmin 1vmin;
-  }
-
-  .section-1 .row .col-md-6 .panel {
-    padding: 10vmin 13vmin;
-  }
-}
-@media only screen and (max-width: 768px) {
-    /* Change hover effect on navbar*/
-   header a.home{
+  /* Change hover effect on navbar*/
+  header a.home{
     border: none;
-    padding-top: 1em;
   }
   
   header a.home:hover{
@@ -43,83 +22,63 @@
     border-bottom: none;
     color: darkgray;
   }
-    header .navbar-brand {
-      padding-left: 1rem;
-    }
-  
-    header .row .col-md-7 {
-      padding: 25vmin 5vmin;
-    }
 
-    div.middle{
-      position: absolute;
-      top: 83%;
-    }
-  
-    header .row .col-md-5 {
-      padding: 30vmin 1vmin;
-    }
-    
-    .section-1 .row .col-md-6 .panel {
-      position: initial;
-      width: initial;
-      height: initial;
-      padding: 3vmin;
-    }
-    .section-2 .cover {
-      background-position: -25vmin -10vmin;
-    }
-    .numbers .rect {
-      width: 10rem;
-      height: 8rem;
-    }
-    .numbers .rect h1 {
-      font-size: 2rem;
-    }
-  
-    .section-3 {
-      height: inherit;
-      padding: 10vmin !important;
-    }
-    .section-3 .row h1 {
-      padding: 6vmin 4vmin;
-    }
-    .section-3 .platform .col-md-6 {
-      text-align: center !important;
-    }
-    .section-3 .desktop i {
-      font-size: 8vmin;
-    }
-    .section-4 .carousel-item {
-      padding-left: 0.6rem;
-    }
-    footer .row .col-md-2 {
-      margin-top: 8vmin;
-    }
+  header h2.navbar-brand {
+    padding-left: 1rem;
+    font-size: 2.5em;
+  }
+
+  .section-1 .row .col-md-6 .headchef img {
+    padding-top: 5rem;
+    width: 100%;
+  }
+
+  .section-2 .open-pic img{
+    position: static;
+    padding-bottom: 3rem;
+    width:90%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  header a{
+    font-size: 1em;
+  }
+
+  div.middle{
+    position: absolute;
+    top: 43rem;
+  }
+  .section-1{
+    padding-bottom: 0;
+  }
+
+  .section-1 .chef-intro p{
+    font-size: 1rem;
   }
   
-  /* screen size 375px */
-  
-  @media only screen and (max-width: 375px) {
-    header .row .col-md-7 h1 {
-      font-size: 3em;
-    }
-
-    div.middle{
-      position: absolute;
-      top: 90%;
-    }
-
-    .section-1 .row .col-md-6 .panel {
-      padding: 15vmin;
-    }
-    .section-4 .card {
-      width: 18em;
-    }
+  .section-1 .chef-name p{
+    font-size: 2.5rem;
   }
-  
-  @media only screen and (max-width: 320px) {
-    .section-4 .carousel-inner {
-      margin-left: -4vmin;
-    }
+
+  .section-1 .about-chef p{
+    font-size: 1rem;
+    padding: 1.5em;
   }
+
+  .section-1 .headchef img{
+    position: relative;
+    top: 70px;
+  }
+
+  .section-2 .open-pic img{
+    width: 100%;
+    top: 200px;
+  }
+
+  .info .column .ic{
+    padding: 0.1em;
+    font-size: 1.3em;
+  }
+}

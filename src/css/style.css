@@ -98,7 +98,7 @@ header .row .col-md-5 img {
 }
 
 header {
-  background-image:  url(../images/header_background.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)), url(../images/header_background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,6 +178,13 @@ div.middle{
   transform: scaleY(1);
 }
 
+main{
+  background-image: url(../images/Home-Background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /********** section 1 **************/
 
 .section-1 {
@@ -185,43 +192,184 @@ div.middle{
 }
 
 .section-1 .row .col-md-6 .headchef img {
-  opacity: 0.8;
+  opacity: 0.9;
   width: 80%;
   border-radius: 0.2em;
+  padding: 0 1em;
 }
 
-.section-1 .row .col-md-6:last-child {
+.section-1 .row .col-md-6:first-child {
   position: relative;
+  top: 30px;
+  width: 100%;
+  min-height: 1px;
 }
 
-.section-1 .row .col-md-6 .panel {
-  position: absolute;
-  top: 7vmin;
-  left: -18vmin;
-  background: white;
-  border-radius: 3px;
-  text-align: left;
-  padding: 20vmin 5vmin 20vmin 10vmin;
-  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
-  font-family: var(--Rubik);
-  z-index: 1;
+.section-1 .chef-intro p{
+  margin-bottom: 0;
+  padding: 1em;
+  display: inline-block;
+  background-color: #4D7C8C;
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-.section-1 .row .col-md-6 .panel h1 {
-  font-weight: bold;
-  padding: 0.4em 0;
-  font-size: 2em;
+.section-1 .chef-intro{
+  margin-bottom: 20px;
 }
 
-.section-1 .row .col-md-6 .panel p {
-  font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.5);
+.section-1 .chef-name p{
+  margin-bottom: 0;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  background-color: #8BA3B2;
+  color: #000;
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-1 .chef-name{
+  margin-bottom: 40px;
+}
+
+.section-1 .about-chef p{
+  padding: 4em;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 200;
+  line-height: 1.5;
 }
 
 /**********Section-2****************/
-.section-2 .carousel-item{
-  height: 93vh;
+
+.section-2 {
+  padding: 20vmin 0vmin;
 }
 
+.section-2 .open-pic img{
+  position: relative;
+  top: 150px;
+}
 
+.section-2 .open-intro p{
+  margin-bottom: 0;
+  padding: 1em;
+  display: inline-block;
+  background-color: #7C4C54;
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
 
+.section-2 .open-intro{
+  margin-bottom: 10px;
+}
+
+.section-2 .open-hours p{
+  margin-bottom: 0;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  background-color: #E96160;
+  color: #000;
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-2 .open-hours{
+  margin-bottom: 30px;
+}
+
+.section-2 .about-open{
+  justify-content: center;
+  padding: 2em 2em 0 2em;
+  display: inline-block;
+  background-color: #000;
+}
+
+.section-2 .about-open table{
+  color: #fff;
+  font-family: KGHappySolid;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/**********Info************/
+.info-wrapper{
+  padding: 2.5em 0;
+}
+
+.info{
+  width: 100%;
+}
+
+.wrapper{
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.info .row{
+  background-color: #628D8C;
+  border: 0.15em solid darkgray;
+}
+
+.info .about-us{
+  border-right: 0.15em solid darkgray;
+  padding: 2.5em;
+}
+
+.info .news{
+  height: 236px;
+  border-right: 0.15em solid darkgray;
+  padding: 3em;
+}
+
+.row h4.text{
+  font-family: KGHappySolid;
+  font-size: 1.5em;
+  color: #fff;
+} 
+
+.row p.text-content{
+  font-size: 1em;
+}
+
+.row p.copy-right{
+  color: #8ba3b2;
+}
+
+.row .email{
+  font-family: KGHappySolid;
+}
+
+.info .social{
+  height: 236px;
+  padding: 2.5em;
+}
+
+.info .column .ic:first-child{
+  padding-left: 0;
+}
+
+.info .column .ic{
+  padding: 0.5em;
+  font-size: 1.5em;
+}
