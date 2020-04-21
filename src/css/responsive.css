@@ -1,9 +1,6 @@
 
-@media only screen and (max-width: 440px){
-  div.middle{
-    position: absolute;
-    top: 20rem;
-  }
+@media only screen and (max-width: 1280px){
+  
   /* Change hover effect on navbar*/
   header a.home{
     border: none;
@@ -11,44 +8,26 @@
   
   header a.home:hover{
     border: none;
-    color: darkgray;
-  }
-
-  header a{
-    font-size: 1.2em;
+    color: #fff;
   }
 
   header .nav-link:hover {
     border-bottom: none;
-    color: darkgray;
+    color: #fff;
   }
 
   header h2.navbar-brand {
     padding-left: 1rem;
+    padding-right: 0.5rem;
     font-size: 2.5em;
   }
-
-  .section-1 .row .col-md-6 .headchef img {
-    padding-top: 5rem;
-    width: 100%;
-  }
-
-  .section-2 .open-pic img{
-    position: static;
-    padding-bottom: 3rem;
-    width:90%;
-  }
-
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-  header a{
-    font-size: 1em;
-  }
-
+@media only screen and (max-width: 1024px){
+  
   div.middle{
     position: absolute;
-    top: 43rem;
+    top: 67%;
   }
   .section-1{
     padding-bottom: 0;
@@ -82,3 +61,34 @@
     font-size: 1.3em;
   }
 }
+
+@media only screen and (max-width: 768px){
+  header .container .col-md-7 h1 {
+    font-size: 10vmin;
+  }
+
+  div.middle{
+    position: absolute;
+    top: 73%;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  div.middle{
+    position: absolute;
+    top: 77%;
+  }
+
+  .section-1 .row .col-md-6 .headchef img {
+    padding-top: 5rem;
+    width: 100%;
+  }
+
+  .section-2 .open-pic img{
+    position: static;
+    padding-bottom: 3rem;
+    width:90%;
+  }
+
+}
+
