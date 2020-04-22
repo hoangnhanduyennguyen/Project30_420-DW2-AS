@@ -90,5 +90,24 @@
     width:90%;
   }
 
+  .section-5 .swiper-slide {
+    height: 400px;
+    width: 300px;
+  }
+
+  .section-5 .swiper-container .swiper-slide .imgbx .text h1{
+    font-size: 5em;
+  }
+
+  .section-5 .swiper-container .swiper-slide .content{
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .section-5 .swiper-container .swiper-slide .content h3{
+    font-size: 1.7em;
+    padding: 0 0 10px 0;
+  }
+
 }
 

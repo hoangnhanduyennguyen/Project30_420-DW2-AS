@@ -340,14 +340,13 @@ main{
 }
 .section-5 .swiper-container {
   width: 100%;
-padding-top: 50px;
-padding-bottom: 20px;
+  padding: 50px 0;
 }
 .section-5 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 600px;
-  height: 700px;
+  width: 500px;
+  height: 600px;
   border-radius: 20px;
   background: #fff;
 }
@@ -355,6 +354,7 @@ padding-bottom: 20px;
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
+  border: 1em solid #fff;
 }
 
 .section-5 .swiper-container .swiper-slide .imgbx {
@@ -362,6 +362,7 @@ padding-bottom: 20px;
   overflow: hidden;
   border-radius: 20px;
 }
+
 #st{
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(../images/body-background.jpg);
   background-repeat: no-repeat;
@@ -369,18 +370,34 @@ padding-bottom: 20px;
   justify-content: center;
   align-items: center;
 }
-.section-5 .swiper-container .swiper-slide .imgbx h1{
-  text-align: center;
+
+.section-5 .swiper-container .swiper-slide .imgbx .text{
   position: relative;
-  top: 40%;
-  font-size: 6.5em;
+  top: 25%;
+  text-align: center;
+}
+
+.section-5 .swiper-container .swiper-slide .imgbx .text h1{
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: texttravelreverse 2s ease-in-out forwards;
+  animation-delay: 0.5s;
+  font-size: 7em;
   font-family: KGHappy;
   display: inline-block;
-  background-color:#fff;
+  color: #fff;
   line-height: 1.5em;
   width: 100%;
 }
 
+@keyframes texttravelreverse{
+  0%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
 
 .section-5 .swiper-container .swiper-slide .imgBx img{
   width: 100%;
@@ -392,16 +409,19 @@ padding-bottom: 20px;
 
 .section-5 .swiper-container .swiper-slide .content{
   box-sizing: border-box;
-  font-size: 20px;
   padding: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  color: gray;
 }
 .section-5 .swiper-container .swiper-slide .content h3{
   margin: 0;
-  padding: 0;
-  font-size: 20px;
-  text-align: center;
+  padding: 20px 0;
+  font-size: 1.7em;
   line-height: 20px;
+  color: #000;
 }
+
 /**********Info************/
 .info-wrapper{
   padding: 2.5em 0;
