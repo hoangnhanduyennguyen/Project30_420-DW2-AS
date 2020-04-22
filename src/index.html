@@ -13,6 +13,10 @@
             crossorigin="anonymous">
         <!--Scroll reveal Javascript-->
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <!--Swiper-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper.min.css">
         <!--Css files-->
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css">
@@ -39,7 +43,7 @@
                       <a class="nav-link" href="#chef">CHEF</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">MENU</a>
+                      <a class="nav-link" href="#menu">MENU</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#hours">HOURS</a>
@@ -48,7 +52,7 @@
                       <a href="#" class="nav-link">RESERVATION</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">STORY</a>
+                      <a href="#story" class="nav-link">STORY</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">LOG IN</a>
@@ -104,7 +108,10 @@
                   </div>
                 </div>
               </section>
-              <section class="section-2" id="hours">
+              <section class="section-2" id="menu">
+
+              </section>
+              <section class="section-3" id="hours">
                 <div class="container text-center">
                   <div class="row">
                     <div class="col-md-6 col-12 showcase-left">
@@ -201,6 +208,104 @@
                   </a>
                 </div>-->
               </section>
+             <!-- <section class="section-5" id ="story">
+                <div class="swiper-container">
+                  <div class="swipper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="sliderText">
+                          <h3>Slide One</h3>
+                        </div>
+                        <div class="content">
+                          <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="sliderText">
+                          <h3>Slide One</h3>
+                        </div>
+                        <div class="content">
+                          <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="sliderText">
+                          <h3>Slide One</h3>
+                        </div>
+                        <div class="content">
+                          <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <div class="sliderText">
+                          <h3>Slide One</h3>
+                        </div>
+                        <div class="content">
+                          <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>-->
+              <section class="section-5" id="story">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="imgbx" id="st">
+                        <h1>OUR STORY</h1>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="imgBx">
+                        <img src="images/story_1.jpg">
+                      </div>
+                      <div class="content">
+                        <h3>Slide One</h3>
+                        <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="imgBx">
+                        <img src="images/story_2.jpg">
+                      </div>
+                      <div class="content">
+                        <h3>Slide Two</h3>
+                        <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="imgBx">
+                        <img src="images/story_3.jpg">
+                      </div>
+                      <div class="content">
+                        <h3>Slide Three</h3>
+                        <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="imgBx">
+                        <img src="images/story_4.jpg">
+                      </div>
+                      <div class="content">
+                        <h3>Slide Fourth</h3>
+                        <p>In 2010, John visited Vietnam and fell in love with the Vietnamese cuisine.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="imgbx">
+                        <img src="images/story_5.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
               <div class="info-wrapper col-12">
                 <div class=" info wrapper">
                   <div class="row align-items-center">
@@ -251,32 +356,74 @@
           <footer>
 
           </footer>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin="anonymous"></script>
-          <script src="javascript/main.js"></script>
-          <script>
-            window.sr = ScrollReveal();
-            sr.reveal('.navbar', {
-              duration: 2000,
-              origin:'bottom'
-            });
-            sr.reveal('.showcase-left', {
-              duration: 1500,
-              origin:'top',
-              distance:'300px'
-            });
-            sr.reveal('.showcase-right', {
-              duration: 1500,
-              origin:'right',
-              distance:'300px'
-            });
-            sr.reveal('.infor-wrapper', {
-              duration: 2000,
-              origin: 'botom'
-            });
-          </script>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>     
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.navbar', {
+        duration: 2000,
+        origin:'bottom'
+      });
+      sr.reveal('.showcase-left', {
+        duration: 1500,
+        origin:'top',
+        distance:'300px'
+      });
+      sr.reveal('.showcase-right', {
+        duration: 1500,
+        origin:'right',
+        distance:'300px'
+      });
+      sr.reveal('.infor-wrapper', {
+        duration: 2000,
+        origin: 'botom'
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="javascript/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows : true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+    <script type="text/javascript" src="javascript/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        autoplay: {delay: 3000, },
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows : true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
 </html>
