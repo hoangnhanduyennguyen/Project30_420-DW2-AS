@@ -23,6 +23,10 @@ html{
   box-sizing: border-box;
 }
 
+body{
+  font-family: KGHappySolid;
+}
+
 header,section {
   overflow-x: hidden;
 }
@@ -258,6 +262,48 @@ main{
   font-weight: 200;
   line-height: 1.5;
 }
+
+/**********Section-2****************/
+.section-2{
+  padding-top: 20vmin; 
+}
+
+.section-2 .container .row .col-xl-12{
+  text-align: center;
+}
+
+.section-2 .container .row .col-xl-12 p{
+  padding: 0.2em;
+  display: inline-block;
+  background-color: rgb(228, 227, 227);
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-2 .container .row .menu {
+  padding: 1em;
+}
+
+.section-2 .container .row .menu img {
+  padding: 1em;
+  width: 300px;
+  height: 236px;
+}
+
+.section-2 .container .row .menu .content{
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+}
+
+.section-2 .container .row .menu .content span{
+  color: orange;
+  font-size: 2em;
+}
+
 
 /**********Section-3****************/
 
