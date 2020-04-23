@@ -346,7 +346,7 @@ main{
   background-position: center;
   background-size: cover;
   width: 500px;
-  height: 600px;
+  height: 650px;
   border-radius: 20px;
   background: #fff;
 }
@@ -354,7 +354,7 @@ main{
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
-  border: 1em solid #fff;
+  border: 0.5em solid #fff;
 }
 
 .section-5 .swiper-container .swiper-slide .imgbx {
@@ -380,7 +380,7 @@ main{
 .section-5 .swiper-container .swiper-slide .imgbx .text h1{
   transform: scaleX(0);
   transform-origin: left;
-  animation: texttravelreverse 2s ease-in-out forwards;
+  animation: texttravelreverse 1s ease-in-out forwards;
   animation-delay: 0.5s;
   font-size: 7em;
   font-family: KGHappy;
