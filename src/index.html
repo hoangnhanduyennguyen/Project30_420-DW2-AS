@@ -49,13 +49,13 @@
                       <a class="nav-link" href="#hours">HOURS</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">RESERVATION</a>
+                      <a href="#reservation" class="nav-link">RESERVATION</a>
                     </li>
                     <li class="nav-item">
                       <a href="#story" class="nav-link">STORY</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#login">LOGIN</a>
+                      <a class="nav-link" href="#log">LOGIN</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">CONTACT</a>
@@ -251,7 +251,14 @@
               <!--End of section-3 Hours-->
               <!--Section-4 Reservation-->
               <section class="section-4" id="reservation">
-
+                <div class="col-lg-6 col-md-12 menu showcase-right">
+                  <img src="images/seafood-noddle.jpg" class="rounded-circle">
+                  <div class="content">
+                    <h4>Seafood Noddle Soup - Hu Tieu</h4>
+                    <p>Seafood, pork soup.</p>
+                    <span>$17</span>
+                  </div>
+                </div>
               </section>
               <!--End of Section-4 Reservation-->
               <!--Section-5 Story-->
@@ -312,7 +319,7 @@
               </section>
               <!--ENd of section-5 Story-->
               <!--Section-6 Log In-->
-              <section class="section-6" id="login">
+              <section class="section-6" id="log">
               <!---->  <div class="login-container d-flex align-items-center justify-content-center">
                   <form class="login-form text-center">
                         <div class="tabs">
@@ -322,38 +329,43 @@
                           </ul>
                         </div>
                         <div class="register">
-                          <div id="exists" class="form-group alert alert-danger rounded-pill" hidden="hidden">
-                            Email address already exists!
+                          <div id="userExists" class="form-group alert alert-danger rounded-pill" hidden="hidden">
+                            Username already exists!
                           </div>
-                          <div id="registered" class="form-group alert alert-success" hidden="hidden">
+                          <div id="mismatch" class="form-group alert alert-danger rounded-pill" hidden="hidden">
+                            Passwords do not match!
+                          </div>
+                          <div id="registered" class="form-group alert alert-success rounded-pill" hidden="hidden">
                             Register Successful!
                           </div>
                           <div class="form-group">
-                            <input type ="text" class="form-control rounded-pill form-control-lg" placeholder="Username">
-                          </div>
-                          <div class="form-group">
-                            <input id="registerEmail" type="email" class="form-control rounded-pill form-control-lg" placeholder="E-mail" class="input">
+                            <input id="registerUser" type ="text" name="username" class="form-control rounded-pill form-control-lg" placeholder="Username">
                           </div>
                           <div class="form-group">
                             <input id ="registerPass" type="password" class="form-control rounded-pill form-control-lg" placeholder="Password">
                           </div>
+                          <div class="form-group">
+                            <input id="registerRepeat" class="form-control rounded-pill form-control-lg" name="repeat" type="password" placeholder="Confirm your password">
+                          </div>
                           <button id="register" type="submit" class="btn btn-large button button1 button2 btn-block mt-5">Register</button>
                         </div>
                         <div class="login">
-                          <div id="invalid" class="form-group alert alert-danger" hidden="hidden">
-                            Invalid email and password!
+                          <div id="logSuccess" class="form-group rounded-pill alert alert-info" hidden="hidden">
                           </div>
-                          <div id="loggedin" class="form-group alert alert-success" hidden="hidden">
-                            Welcome back! 
+                          <div id="invalid" class="form-group rounded-pill alert alert-danger" hidden="hidden">
+                            Invalid username and password!
+                          </div>
+                          <div id="loggedin" class="form-group alert alert-success rounded-pill" hidden="hidden">
+                            Login Successful!
                           </div>
                           <div class="form-group">
-                            <input id="loginEmail" type="email" class="form-control rounded-pill form-control-lg" placeholder="E-mail" class="input">
+                            <input id="loginUser" class="form-control rounded-pill" name="username" type="text" placeholder="Username">
                           </div>
                           <div class="form-group">
-                            <input id="loginPass" type="password" class="form-control rounded-pill form-control-lg" placeholder="Password">
+                            <input id="loginPass" type="password" class="form-control rounded-pill form-control-lg" name="pass" placeholder="Password">
                           </div>
                           <div class="submit-button">
-                            <button id ="loging" type="submit" class="btn btn-large button button1 button2 btn-block mt-5">Login</button>
+                            <button id ="login" type="submit" class="btn btn-large button button1 button2 btn-block mt-5">Login</button>
                           </div>
                         </div>
                   </form>
@@ -484,83 +496,6 @@
         pagination: {
           el: '.swiper-pagination',
         },
-      });
-    </script>
-    <script>
-      $(".login").hide();
-      $(".register_li").addClass("active");
-
-      $(".login_li").click(function(){
-        $(this).addClass("active");
-        $(".register_li").removeClass("active");
-        $(".login").show();
-        $(".register").hide();
-      })
-
-      $(".register_li").click(function(){
-        $(this).addClass("active");
-        $(".login_li").removeClass("active");
-        $(".register").show();
-        $(".login").hide();
-      })
-    </script>
-    <script>
-      $(function(){
-        $("#loginEmail").focus(function(){
-          $("#invalid").attr("hidden","hidden");
-          $("#loggedin").attr("hidden","hidden");
-        });
-        $("#registerEmail").focus(function(){
-          $("#exists").attr("hidden","hidden");
-          $("#registered").attr("hidden","hidden");
-        });
-        $("#registerEmail").blur(function(){
-          let email = $("#registerEmail").val();
-          if (localStorage.getItem(email) != undefined){
-            $("#exists").removeAttr("hidden");
-            $("#register").attr("disabled", "disabled");
-          }
-        });
-        $("#loging").click(function(event) {
-        // event is the object that contains the event of clicking the button
-        // preventDefault function stops the default action associated with the button
-        // which is submitting the form and refreshing the page
-        event.preventDefault();
-        $("#loggedin").attr("hidden", "hidden");
-        $("#invalid").attr("hidden", "hidden");
-        let email = $("#loginEmail").val();
-        let pass = $("#loginPass").val();
-        // (k, v) -> (email, pass)
-        if(localStorage.getItem(email) == pass) {
-          // User already exists and password is correct! (Successful Login!)
-          $("#loggedin").append(email);
-          $("#loggedin").removeAttr("hidden");
-          // This will hold the active user for us
-          localStorage.setItem("student", email);
-          // This will take us to the next HTML page!
-          setTimeout(function() {
-            window.location.href = "index.html";
-          }, 1000);
-        } else{
-         $("#invalid").removeAttr("hidden");
-        }
-        $("#loginPass").val('');
-      });
-      $("#register").click(function(event) {
-        event.preventDefault();
-        $("#exists").attr("hidden", "hidden");
-        $("#registered").attr("hidden", "hidden");
-        let email = $("#registerEmail").val();
-        let pass = $("#registerPass").val();
-        let repeat = $("#registerRepeat").val();
-        if(localStorage.getItem(email) != undefined) {
-          $("#exists").removeAttr("hidden");
-        } else {
-            localStorage.setItem(email, pass);
-            $("#registered").removeAttr("hidden");
-        }
-        $("#registerPass").val('');
-      });
       });
     </script>
     </body>
