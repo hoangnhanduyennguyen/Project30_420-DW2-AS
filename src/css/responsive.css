@@ -67,6 +67,10 @@
     font-size: 10vmin;
   }
 
+  .section-3 .open-pic img{
+    top: -50px;
+  }
+
   div.middle{
     position: absolute;
     top: 73%;

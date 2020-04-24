@@ -17,6 +17,8 @@
 
 html{
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -24,6 +26,8 @@ html{
 }
 
 body{
+  margin: 0;
+  padding: 0;
   font-family: KGHappySolid;
 }
 
@@ -341,7 +345,6 @@ main{
   background-color: #E96160;
   color: #000;
   font-family: KGHappy;
-  display: inline-block;
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.5;
@@ -466,6 +469,58 @@ main{
   font-size: 1.7em;
   line-height: 20px;
   color: #000;
+}
+/**********Login***********/
+.login-container{
+  height: calc(100vh - 80px);
+  z-index: 7;
+  font-size: 1.2em;
+}
+
+.login-form{
+  max-width: 90%;
+  width: 500px;
+  padding: 1em;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.form-control{
+  font-size: 1em;
+  min-height: 3em;
+  font-weight: 500;
+}
+
+.form-control:focus{
+  border: 1px solid  #494f57;
+  box-shadow: 0 0 0 0.25rem  #96999c;
+}
+
+div.submit-button{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.login-form .tabs ul{
+  text-align: center;
+  padding: 0;
+}
+
+.login-form .tabs ul li{
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 1.5em;
+  color: #494f57;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.login-form .tabs ul li.active{
+  border-bottom: 2px solid #494f57;
 }
 
 /**********Info************/

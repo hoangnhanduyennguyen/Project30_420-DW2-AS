@@ -55,7 +55,7 @@
                       <a href="#story" class="nav-link">STORY</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">LOGIN</a>
+                      <a class="nav-link" href="#login">LOGIN</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">CONTACT</a>
@@ -123,7 +123,7 @@
                       <div class="col-lg-6 col-md-12 menu showcase-left">
                         <img src="images/chicken-noddle.jpg" class="rounded-circle" >
                         <div class="content">
-                          <h4>Chicken Noddle Soup - Pho Ga</h2>
+                          <h4>Chicken Noddle Soup - Pho Ga</h4>
                           <p>Chicken breast in chicken broth.</p>
                           <span>$15</span>
                         </div>
@@ -131,7 +131,7 @@
                       <div class="col-lg-6 col-md-12 menu showcase-right">
                         <img src="images/beef-pho.jpg" class="rounded-circle" >
                         <div class="content">
-                          <h4>Beef Pho - Pho Bo</h2>
+                          <h4>Beef Pho - Pho Bo</h4>
                           <p>Beef stock, chuck roast steaks, fish sauce.</p>
                           <span>$17</span>
                         </div>
@@ -139,15 +139,15 @@
                       <div class="col-lg-6 col-md-12 menu showcase-left">
                         <img src="images/beef-noddle.jpg" class="rounded-circle">
                         <div class="content">
-                          <h4>Beef Noddle Soup - Bun Bo</h2>
-                          <p>Beef brisket, beef shank, pork hocks.</p>
+                          <h4>Beef Noddle Soup - Bun Bo</h4>
+                          <p>Beef brisket, beef shank, pork hocks, fish sauce.</p>
                           <span>$20</span>
                         </div>
                       </div>
                       <div class="col-lg-6 col-md -12 menu showcase-right">
                         <img src="images/thick-noddle.jpg" class="rounded-circle" >
                         <div class="content">
-                          <h4>Thick Noddle Soup - Banh Canh</h2>
+                          <h4>Thick Noddle Soup - Banh Canh</h4>
                           <p>Thick noodle, pork knuckle and shrimp.</p>
                           <span>$13</span>
                         </div>
@@ -155,7 +155,7 @@
                       <div class="col-lg-6 col-md-12 menu showcase-left">
                         <img src="images/beef-stew.jpg" class="rounded-circle" >
                         <div class="content">
-                          <h4>Beef Stew - Bo Kho</h2>
+                          <h4>Beef Stew - Bo Kho</h4>
                           <p>Beef stock, chuck roast steaks, fish sauce.</p>
                           <span>$15</span>
                         </div>
@@ -163,7 +163,7 @@
                       <div class="col-lg-6 col-md-12 menu showcase-right">
                         <img src="images/seafood-noddle.jpg" class="rounded-circle">
                         <div class="content">
-                          <h4>Seafood Noddle Soup - Hu Tieu</h2>
+                          <h4>Seafood Noddle Soup - Hu Tieu</h4>
                           <p>Seafood, pork soup.</p>
                           <span>$17</span>
                         </div>
@@ -171,7 +171,7 @@
                       <div class="col-lg-6 col-md-12 menu showcase-left">
                         <img src="images/beef-noddle-salad.jpg" class="rounded-circle">
                         <div class="content">
-                          <h4>Beef Noddle Salad - Bun Xao</h2>
+                          <h4>Beef Noddle Salad - Bun Xao</h4>
                           <p>Beef brisket, beef shank, pork hocks.</p>
                           <span>$20</span>
                         </div>
@@ -179,8 +179,8 @@
                       <div class="col-lg-6 col-md-12 menu showcase-right">
                         <img src="images/crab-noddle-soup.jpg" class="rounded-circle">
                         <div class="content">
-                          <h4>Crab Noddle Soup - Banh Canh</h2>
-                          <p>Tomato broth topped with freshwater crab.</p>
+                          <h4>Crab Noddle Soup - Bun Rieu</h4>
+                          <p>Tomato broth with freshwater crab.</p>
                           <span>$15</span>
                         </div>
                       </div>
@@ -312,8 +312,52 @@
               </section>
               <!--ENd of section-5 Story-->
               <!--Section-6 Log In-->
-              <section class="section-6" id="logIn">
-
+              <section class="section-6" id="login">
+              <!---->  <div class="login-container d-flex align-items-center justify-content-center">
+                  <form class="login-form text-center">
+                        <div class="tabs">
+                          <ul>
+                            <li class="register_li">Register</li>
+                            <li class="login_li">login</li>
+                          </ul>
+                        </div>
+                        <div class="register">
+                          <div id="exists" class="form-group alert alert-danger rounded-pill" hidden="hidden">
+                            Email address already exists!
+                          </div>
+                          <div id="registered" class="form-group alert alert-success" hidden="hidden">
+                            Register Successful!
+                          </div>
+                          <div class="form-group">
+                            <input type ="text" class="form-control rounded-pill form-control-lg" placeholder="Username">
+                          </div>
+                          <div class="form-group">
+                            <input id="registerEmail" type="email" class="form-control rounded-pill form-control-lg" placeholder="E-mail" class="input">
+                          </div>
+                          <div class="form-group">
+                            <input id ="registerPass" type="password" class="form-control rounded-pill form-control-lg" placeholder="Password">
+                          </div>
+                          <button id="register" type="submit" class="btn btn-large button button1 button2 btn-block mt-5">Register</button>
+                        </div>
+                        <div class="login">
+                          <div id="invalid" class="form-group alert alert-danger" hidden="hidden">
+                            Invalid email and password!
+                          </div>
+                          <div id="loggedin" class="form-group alert alert-success" hidden="hidden">
+                            Welcome back! 
+                          </div>
+                          <div class="form-group">
+                            <input id="loginEmail" type="email" class="form-control rounded-pill form-control-lg" placeholder="E-mail" class="input">
+                          </div>
+                          <div class="form-group">
+                            <input id="loginPass" type="password" class="form-control rounded-pill form-control-lg" placeholder="Password">
+                          </div>
+                          <div class="submit-button">
+                            <button id ="loging" type="submit" class="btn btn-large button button1 button2 btn-block mt-5">Login</button>
+                          </div>
+                        </div>
+                  </form>
+              </div>
               </section>
               <!--End of Section-6 Log In-->
               <!--Section-7 Contact-->
@@ -373,8 +417,7 @@
           <footer>
 
           </footer>
-    </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
@@ -443,4 +486,82 @@
         },
       });
     </script>
+    <script>
+      $(".login").hide();
+      $(".register_li").addClass("active");
+
+      $(".login_li").click(function(){
+        $(this).addClass("active");
+        $(".register_li").removeClass("active");
+        $(".login").show();
+        $(".register").hide();
+      })
+
+      $(".register_li").click(function(){
+        $(this).addClass("active");
+        $(".login_li").removeClass("active");
+        $(".register").show();
+        $(".login").hide();
+      })
+    </script>
+    <script>
+      $(function(){
+        $("#loginEmail").focus(function(){
+          $("#invalid").attr("hidden","hidden");
+          $("#loggedin").attr("hidden","hidden");
+        });
+        $("#registerEmail").focus(function(){
+          $("#exists").attr("hidden","hidden");
+          $("#registered").attr("hidden","hidden");
+        });
+        $("#registerEmail").blur(function(){
+          let email = $("#registerEmail").val();
+          if (localStorage.getItem(email) != undefined){
+            $("#exists").removeAttr("hidden");
+            $("#register").attr("disabled", "disabled");
+          }
+        });
+        $("#loging").click(function(event) {
+        // event is the object that contains the event of clicking the button
+        // preventDefault function stops the default action associated with the button
+        // which is submitting the form and refreshing the page
+        event.preventDefault();
+        $("#loggedin").attr("hidden", "hidden");
+        $("#invalid").attr("hidden", "hidden");
+        let email = $("#loginEmail").val();
+        let pass = $("#loginPass").val();
+        // (k, v) -> (email, pass)
+        if(localStorage.getItem(email) == pass) {
+          // User already exists and password is correct! (Successful Login!)
+          $("#loggedin").append(email);
+          $("#loggedin").removeAttr("hidden");
+          // This will hold the active user for us
+          localStorage.setItem("student", email);
+          // This will take us to the next HTML page!
+          setTimeout(function() {
+            window.location.href = "index.html";
+          }, 1000);
+        } else{
+         $("#invalid").removeAttr("hidden");
+        }
+        $("#loginPass").val('');
+      });
+      $("#register").click(function(event) {
+        event.preventDefault();
+        $("#exists").attr("hidden", "hidden");
+        $("#registered").attr("hidden", "hidden");
+        let email = $("#registerEmail").val();
+        let pass = $("#registerPass").val();
+        let repeat = $("#registerRepeat").val();
+        if(localStorage.getItem(email) != undefined) {
+          $("#exists").removeAttr("hidden");
+        } else {
+            localStorage.setItem(email, pass);
+            $("#registered").removeAttr("hidden");
+        }
+        $("#registerPass").val('');
+      });
+      });
+    </script>
+    </body>
 </html>
