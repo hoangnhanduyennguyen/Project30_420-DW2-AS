@@ -58,7 +58,7 @@
                 <a class="nav-link" href="#log">LOGIN</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#location">LOCATION</a>
               </li>
             </ul>
           </div>
@@ -251,12 +251,104 @@
       <!--End of section-3 Hours-->
       <!--Section-4 Reservation-->        
       <section class="section-4" id="reservation">
-        <div class="col-lg-6 col-md-12 menu showcase-right">
-          <img src="images/seafood-noddle.jpg" class="rounded-circle">
-          <div class="content">
-            <h4>Seafood Noddle Soup - Hu Tieu</h4>
-            <p>Seafood, pork soup.</p>
-            <span>$17</span>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                  <div class="card-header text-center">
+                    <h1>Booking Form</h1>
+                  </div>
+                  <form>
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="emailAddress">Email address</label>
+                        <input id="emailAddress" class="form-control" name="emailAddress" type="email">
+                      </div>
+                      <div class="form-group">
+                       <label for="phoneNumber">Phone number</label>
+                        <input id="phoneNumber" class="form-control" name="phoneNumber" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="numberPeople">Number of people</label>
+                        <select class="form-control" name="numberPeople" id="numberPeople">
+                          <option value="0"></option> 
+                          <option value="1">1 Person</option>  
+                          <option value="2">2 People</option> 
+                          <option value="3">3 People</option> 
+                          <option value="4">4 People</option> 
+                          <option value="5">5 People</option> 
+                          <option value="6">6 People</option> 
+                          <option value="7">7 People</option> 
+                          <option value="8">8 People</option> 
+                          <option value="9">9 People</option> 
+                          <option value="10">10 People</option> 
+                          <option value="11">11 People</option> 
+                          <option value="12">12 People</option> 
+                          <option value="13">13 People</option> 
+                          <option value="14">14 People</option> 
+                          <option value="15">15 People</option> 
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="calendar">Date</label>
+                        <input class="form-control" id="calendar" type="date">
+                      </div>
+                      <div class="form-group">
+                      <label for="time">Time</label>
+                        <input class="form-control" id="time" type="time">
+                      </div>
+                      <div class="form-group">
+                      <label for="specialRequest">Special request</label>
+                      <textarea class="form-control" id="specialRequest" rows="3" name="specialRequest"></textarea>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="form-action">
+                        <button id="reserveNow" class="bt" type="submit">Reserve Now</button>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6" id ="booking-info">
+              <div class="card">
+                <div class="card-header text-center">
+                  <h1>Booking Information</h1>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h5>Customer Name:  <span id="custName"> </span></h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <h5>Customer Number:  <span id="custNum"> </span></h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <h5>Email:  <span id="custEmail"> </span></h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <h5>Phone Number:  <span id="custPhone"> </span></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body" id ="bookingList">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h5>Booking ID:  <span id="bookID"> </span></h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <h5>Booking Date:  <span id="bookDate"> </span></h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <h5>Booking Time:  <span id="bookTime"> </span></h5>
+                    </div>
+                    <div class="col-sm-12">
+                      <h5>Number of People:  <span id="bookPpl"> </span></h5>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
           </div>
         </div>
       </section>        
@@ -324,8 +416,8 @@
           <form class="login-form text-center">
             <div class="tabs">
               <ul>
-                <li class="register_li">Register</li>
-                <li class="login_li">login</li>
+                <li class="register_li"><h2>Register</h2></li>
+                <li class="login_li"><h2>Login</h2></li>
               </ul>
             </div>
             <div class="register">
@@ -347,7 +439,7 @@
               <div class="form-group">
                 <input id="registerRepeat" class="form-control rounded-pill form-control-lg" name="repeat" type="password" placeholder="Confirm your password">
               </div>
-              <button id="register" type="submit" class="btn btn-large button button1 button2 btn-block mt-5">Register</button>
+              <button id="register" type="submit" class="button button2 btn-block mt-5">Register</button>
             </div>  
             <div class="login">
               <div id="logSuccess" class="form-group rounded-pill alert alert-info" hidden="hidden">
@@ -365,7 +457,7 @@
                 <input id="loginPass" type="password" class="form-control rounded-pill form-control-lg" name="pass" placeholder="Password">
               </div>
               <div class="submit-button">
-                <button id ="login" type="submit" class="btn btn-large button button1 button2 btn-block mt-5">Login</button>
+                <button id ="login" type="submit" class="button button1 btn-block mt-5">Login</button>
               </div>
             </div>  
           </form>
@@ -373,8 +465,19 @@
       </section>        
       <!--End of Section-6 Log In-->
       <!--Section-7 Contact-->
-      <section class="section-7" id="contact">
-
+      <section class="section-7" id="location">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+            <p class="text">LOCATION</p>
+            </div>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.615565192524!2d-73.9876131843148!3d40.74848394331907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca05ca48ab5ac2c!2s350+5th+Ave%2C+New+York%2C+NY+10118!5e0!3m2!1sen!2sus!4v1530981553173"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <!--<p>We're in the Empire State Building, top by any time.</p>-->
+        </div>
       </section>        
       <!--End of Section-7 Contact-->
       <!--Footer-->
@@ -465,26 +568,6 @@
           grabCursor: true,
           centeredSlides: true,
           slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-      </script>
-      <script type="text/javascript" src="javascript/swiper.min.js"></script>
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
           autoplay: {delay: 3000, },
           coverflowEffect: {
             rotate: 50,
@@ -497,6 +580,7 @@
             el: '.swiper-pagination',
           },
         });
-      </script>  
+      </script>
+      </script>  -->
   </body>
 </html>

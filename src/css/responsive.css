@@ -56,6 +56,18 @@
     top: 200px;
   }
 
+  .section-4 .container-fluid{
+    padding: 1rem;
+  }
+   
+  .section-4 .container-fluid .row .card-header h1{
+   font-size: 30px;
+  }
+
+  iframe {
+    left: 7%;
+  }
+
   .info .column .ic{
     padding: 0.1em;
     font-size: 1.3em;
@@ -75,6 +87,9 @@
     position: absolute;
     top: 73%;
   }
+  iframe {
+    left: 0;
+  }
 }
 
 @media only screen and (max-width: 440px){
@@ -92,6 +107,14 @@
     position: static;
     padding-bottom: 3rem;
     width:90%;
+  }
+
+  .section-4 .container-fluid{
+    padding: 0;
+  }
+
+  #booking-info{
+    padding-top: 5em;;
   }
 
   .section-5 .swiper-slide {
@@ -113,5 +136,8 @@
     padding: 0 0 10px 0;
   }
 
+  .section-7 .container .row .col-sm-12 p{
+    font-size: 3em;
+  }
 }
 

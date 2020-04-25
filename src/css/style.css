@@ -368,6 +368,36 @@ main{
   font-size: 1rem;
   line-height: 1.5;
 }
+
+/**********Section-4*******/
+.section-4 .container-fluid{
+ padding: 7rem;
+}
+
+.section-4 .container-fluid .row .card-header h1{
+  font-family: KGHappy;
+  text-transform: uppercase;
+}
+
+.bt{
+  background: none;
+  border: 3px solid #000;
+  font-family: KGHappySolid;
+  text-transform: uppercase;
+  padding: 17px 27px;
+  min-width: 200px;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.1s linear;
+}
+
+.bt:hover{
+  color: #E96160;
+  border: 3px solid #E96160;
+}
+
+/*********End of Section-4*******/
+
 /**********Section-5*******/
 
 .section-5{
@@ -470,11 +500,22 @@ main{
   line-height: 20px;
   color: #000;
 }
-/**********Login***********/
+/**********Section-6 Login***********/
+
 .login-container{
   height: calc(100vh - 80px);
   z-index: 7;
   font-size: 1.2em;
+}
+
+.login-container .login-form .tabs li h2{
+  font-size: 40px;
+}
+
+.login-container .login-form .tabs li:hover{
+  border-bottom: 3px solid #fff;
+  font-size: 37px;
+  color: #fff;
 }
 
 .login-form{
@@ -490,11 +531,6 @@ main{
   font-size: 1em;
   min-height: 3em;
   font-weight: 500;
-}
-
-.form-control:focus{
-  border: 1px solid  #494f57;
-  box-shadow: 0 0 0 0.25rem  #96999c;
 }
 
 div.submit-button{
@@ -513,14 +549,58 @@ div.submit-button{
   margin: 5px;
   padding: 5px 10px;
   font-size: 1.5em;
-  color: #494f57;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
 .login-form .tabs ul li.active{
-  border-bottom: 2px solid #494f57;
+  border-bottom: 2px solid #000;
+}
+
+/**********Section-7 Location********/
+
+.section-7{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.section-7 .container .row .col-sm-12{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.section-7 .container .row .col-sm-12 p{
+  padding: 0.2em;
+  display: inline-block;
+  background-color: rgb(228, 227, 227);
+  font-family: KGHappy;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+iframe {
+  display: block;
+  position: relative;
+  left: 15%;
+  /* The 90vw means 90%, use any width you like */
+  width: 90vw;
+  /* Calculate the height to maintain original shape,
+      but match vw number to that above */
+  height: calc(.75 * 90vw);
+  /* Optionally, set maximum height and width */
+  max-width: 800px;
+  max-height: 600px;
+  margin-right: 10px;
+  /* Optionally, you can use margin: 1em auto to center */
+  border: solid 2px gray;
+  box-shadow: 2px 2px 2px silver;
+  border-radius: 4px;
 }
 
 /**********Info************/
