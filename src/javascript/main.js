@@ -10,6 +10,9 @@ $(window).scroll(function () {
   }
 });
 /*********End Of Sticky navbar***********/
+$("#reserve").on('click', function(){
+  window.location.href = "index.html#reservation";
+});
 
 //********To hide the collapse navbar after a link is clicked********/
 $('.navbar-nav>li>a').on('click', function(){
@@ -115,45 +118,49 @@ $("#reserveNow").click(function(event) {
   // create an array of users
   let customerArray = [];
   let bookingArr = [];
-  //let customerArray = localStorage.getItem("customerArray");
   let custEmail = $("#emailAddress").val();
   let custPhone = $("#phoneNumber").val();
   let custName = localStorage.getItem("customer");
- // let custPass = localStorage.getItem("customer").val();
   let bookID = Math.floor(Math.random() * 1000000);
   let bookTime = $("#time").val();
   let bookDate = $("#calendar").val();
   let bookNumberOfPeople = $("#numberPeople").val();
-  bookingObject = {
-    bookid: bookID,
-    booktime: bookTime,
-    bookdate: bookDate,
-    booknumberofpeople: bookNumberOfPeople
-  };
-  bookingArr.push(bookingObject);
-  //let bookingArr = localStorage.getItem("customer" + "_bookings");
-  let customerObject = {
-    custname: custName, 
-    custemail: custEmail,
-    custphone: custPhone,
-    //custpass: custPass,
-    booking: bookingArr
-  };
-  customerArray.push(customerObject);
-  console.log(customerArray);
-  localStorage.setItem("customerArray", JSON.stringify(customerArray));
 
-  console.log(bookingObject);
-  document.getElementById("custEmail").innerText = custEmail;
-  document.getElementById("custPhone").innerText = custPhone;
-  document.getElementById("bookID").innerText = bookID;
-  document.getElementById("bookDate").innerText = bookDate;
-  document.getElementById("bookTime").innerText = bookTime;
-  document.getElementById("bookPpl").innerText = bookNumberOfPeople;
-  $("#emailAddress").val('');
-  $("#phoneNumber").val('');
-  $("#numberPeople").val('');
-  $("#calendar").val('');
-  $("#time").val('');
-  $("#specialRequest").val('');
+  if ($("#loginUser").val() != localStorage.getItem("customer")){
+    alert("Please login as a user!");
+  }else {
+    bookingObject = {
+      bookid: bookID,
+      booktime: bookTime,
+      bookdate: bookDate,
+      booknumberofpeople: bookNumberOfPeople
+    };
+    bookingArr.push(bookingObject);
+    //let bookingArr = localStorage.getItem("customer" + "_bookings");
+    let customerObject = {
+      custname: custName, 
+      custemail: custEmail,
+      custphone: custPhone,
+      //custpass: custPass,
+      booking: bookingArr
+    };
+    customerArray.push(customerObject);
+    console.log(customerArray);
+    localStorage.setItem("customerArray", JSON.stringify(customerArray));
+  
+    console.log(bookingObject);
+    document.getElementById("custEmail").innerText = custEmail;
+    document.getElementById("custPhone").innerText = custPhone;
+    document.getElementById("bookID").innerText = bookID;
+    document.getElementById("bookDate").innerText = bookDate;
+    document.getElementById("bookTime").innerText = bookTime;
+    document.getElementById("bookPpl").innerText = bookNumberOfPeople;
+    $("#emailAddress").val('');
+    $("#phoneNumber").val('');
+    $("#numberPeople").val('');
+    $("#calendar").val('');
+    $("#time").val('');
+    $("#specialRequest").val('');
+
+  }
 });

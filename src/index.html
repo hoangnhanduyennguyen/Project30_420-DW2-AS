@@ -74,7 +74,7 @@
               Welcome to Lavn restaurant! Let's discover our website. 
             </p>
             <div class="middle">
-              <button class="button button1">Make a reservation</button>
+              <button class="button button1" id="reserve">Make a reservation</button>
             </div>
           </div>
           <div class="col-md-5 col-sm-12 showcase-right h-25">
@@ -253,7 +253,7 @@
       <section class="section-4" id="reservation">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 showcase-left">
               <div class="card">
                   <div class="card-header text-center">
                     <h1>Booking Form</h1>
@@ -310,7 +310,7 @@
                   </form>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6" id ="booking-info">
+            <div class="col-sm-12 col-md-6 showcase-right" id ="booking-info">
               <div class="card">
                 <div class="card-header text-center">
                   <h1>Booking Information</h1>
@@ -355,7 +355,7 @@
       <!--End of Section-4 Reservation-->
       <!--Section-5 Story-->
       <section class="section-5" id="story">
-        <div class="swiper-container">
+        <div class="swiper-container showcase-bottom">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="imgbx" id="st">
@@ -466,7 +466,7 @@
       <!--End of Section-6 Log In-->
       <!--Section-7 Contact-->
       <section class="section-7" id="location">
-        <div class="container">
+        <div class="container showcase-bottom">
           <div class="row">
             <div class="col-sm-12">
             <p class="text">LOCATION</p>
@@ -481,7 +481,7 @@
       </section>        
       <!--End of Section-7 Contact-->
       <!--Footer-->
-      <div class="info-wrapper col-12">
+      <div class="info-wrapper col-12 showcase-bottom">
         <div class=" info wrapper">
           <div class="row align-items-center">
             <div class="col-md-4 col-sm-5 about-us">
@@ -499,7 +499,7 @@
                     <input type="text" class="form-control bg-light email" id="inlineFormInputGroupUsername2" placeholder="Email">
                     <div class="input-group-prepend">
                       <div class="input-group-text">
-                        <i class="fas fa-arrow-right"></i>
+                        <a href="#reservation" class="text-dark"><i class="fas fa-arrow-right"></i></a>
                       </div>
                     </div>
                   </div>
@@ -554,7 +554,7 @@
           origin:'right',
           distance:'300px'
         });
-        sr.reveal('.info-wrapper', {
+        sr.reveal('.showcase-bottom', {
           duration: 2000,
           origin: 'botom'
         });

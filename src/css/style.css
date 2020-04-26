@@ -114,7 +114,7 @@ header .row .col-md-5 img {
 }
 
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)), url(../images/header_background.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)), url(../images/header_background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,7 +195,7 @@ div.middle{
 }
 
 main{
-  background-image: url(../images/Home-Background.jpg);
+  background-image: url(../images/header_background.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
@@ -242,7 +242,7 @@ main{
   margin-bottom: 0;
   padding: 0.3em 0.5em;
   display: inline-block;
-  background-color: rgb(228, 227, 227);
+  background-color: #fff;
   color: #000;
   font-family: KGHappy;
   display: inline-block;
@@ -279,7 +279,6 @@ main{
 .section-2 .container .row .col-xl-12 p{
   padding: 0.2em;
   display: inline-block;
-  background-color: rgb(228, 227, 227);
   font-family: KGHappy;
   display: inline-block;
   font-size: 4rem;
@@ -298,8 +297,8 @@ main{
 }
 
 .section-2 .container .row .menu .content{
-  background-color: #000;
-  color: #fff;
+
+  color: #000;
   padding: 1em;
 }
 
@@ -392,8 +391,8 @@ main{
 }
 
 .bt:hover{
-  color: #E96160;
-  border: 3px solid #E96160;
+  color: #5dbcd2;
+  border: 3px solid #5dbcd2;
 }
 
 /*********End of Section-4*******/
@@ -515,7 +514,6 @@ main{
 .login-container .login-form .tabs li:hover{
   border-bottom: 3px solid #fff;
   font-size: 37px;
-  color: #fff;
 }
 
 .login-form{
@@ -576,7 +574,6 @@ div.submit-button{
 .section-7 .container .row .col-sm-12 p{
   padding: 0.2em;
   display: inline-block;
-  background-color: rgb(228, 227, 227);
   font-family: KGHappy;
   display: inline-block;
   font-size: 4rem;
