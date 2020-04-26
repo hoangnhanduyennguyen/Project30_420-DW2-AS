@@ -10,6 +10,8 @@ In this project, I have created a website for a Vietnamese restaurant call Lavn.
 - [How To Use](#how-to-use)
 - [Resources](#resources)
 - [Author](#author)
+
+---
 ## Description
 The website includes 8 sections:
 - Header
@@ -21,8 +23,6 @@ The website includes 8 sections:
 - Login
 - Location
 
----
-
 ### Technologies
 - HTML
 - CSS
@@ -30,17 +30,17 @@ The website includes 8 sections:
 - Javascript
 - 3D card swiper
 
+---
+
 ## How To Use
 The website allows the user to register, login and then reserve a table from the restaurant. It also has the menu, open hours, location,... for more information about the restaurant. It is a user-friendly and responsive website in order to improve the user experience. 
-
----
 
 ## Resources
 - Images:
 [Unsplash](https://unsplash.com/"Unsplash") 
 [Pexels](https://www.pexels.com/"Pexels")
 
--Font: [KGHappy](http://www.kimberlygeswein.com/"KimBerly Gesweln")
+- Font: [KGHappy](http://www.kimberlygeswein.com/"KimBerly Gesweln")
 
 - 3D card: [Swiperjs](https://swiperjs.com/"Swiperjs")
 
