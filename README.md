@@ -1,23 +1,51 @@
 # Project30_420-DW2-AS
-## Web Client Development Project30
+## Web Client Development Project30 Lavn
+VN is the abbreviation for Vietnam and the word "La" with an accent literally means "this is" in Vietnamese. In short, Lavn means "This is Vietnam".
 
+## Introduction
 In this project, I have created a website for a Vietnamese restaurant call Lavn.
 
-### Getting Started
+### Table of Contents
+- [Description](#desciption)
+- [How To Use](#how-to-use)
+- [Resources](#resources)
+- [Author](#author)
+## Description
+The website includes 8 sections:
+- Header
+- Chef
+- Menu
+- Hours
+- Reservation
+- Story
+- Login
+- Location
 
+---
 
-#### Prerequisites
+### Technologies
+- HTML
+- CSS
+- Bootstrap 4
+- Javascript
+- 3D card swiper
 
-#### Installing
+## How To Use
+The website allows the user to register, login and then reserve a table from the restaurant. It also has the menu, open hours, location,... for more information about the restaurant. It is a user-friendly and responsive website in order to improve the user experience. 
 
-### Running the tests
+---
 
-### Resources
+## Resources
+- Images:
+[Unsplash](https://unsplash.com/"Unsplash") 
+[Pexels](https://www.pexels.com/"Pexels")
 
-### Authors
+-Font: [KGHappy](http://www.kimberlygeswein.com/"KimBerly Gesweln")
+
+- 3D card: [Swiperjs](https://swiperjs.com/"Swiperjs")
+
+## Author
 
 * Hoang Nhan Duyen Nguyen
 
-### License
-
-### Acknowledgments
+[Back To The Top](#Project30_420-DW2-AS)
