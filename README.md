@@ -37,12 +37,12 @@ The website allows the user to register, login and then reserve a table from the
 
 ## Resources
 - Images:
-[Unsplash](https://unsplash.com/"Unsplash") 
-[Pexels](https://www.pexels.com/"Pexels")
+[Unsplash](https://unsplash.com/ "Unsplash") 
+[Pexels](https://www.pexels.com/ "Pexels")
 
-- Font: [KGHappy](http://www.kimberlygeswein.com/"KimBerly Gesweln")
+- Font: [KGHappy](http://www.kimberlygeswein.com/ "KimBerly Gesweln")
 
-- 3D card: [Swiperjs](https://swiperjs.com/"Swiperjs")
+- 3D card: [Swiperjs](https://swiperjs.com/ "Swiperjs")
 
 ## Author
 
