@@ -17,8 +17,6 @@ In this project, I have created a website for a Vietnamese restaurant call Lavn.
 ## Prerequisites
 You can use any browser (Chrome, Firefox, Safari,... ) to access Lavn.
 
----
-
 ## Description
 The website includes 8 sections:
 - Header
