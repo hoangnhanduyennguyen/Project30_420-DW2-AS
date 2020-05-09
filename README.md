@@ -6,12 +6,19 @@ VN is the abbreviation for Vietnam and the word "La" with an accent literally me
 In this project, I have created a website for a Vietnamese restaurant call Lavn.
 
 ### Table of Contents
+- [Prerequisites](#prerequisites)
 - [Description](#desciption)
 - [How To Use](#how-to-use)
 - [Resources](#resources)
 - [Author](#author)
 
 ---
+
+## Prerequisites
+You can use any browser (Chrome, Firefox, Safari,... ) to access Lavn.
+
+---
+
 ## Description
 The website includes 8 sections:
 - Header
