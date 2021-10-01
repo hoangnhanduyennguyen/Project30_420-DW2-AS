@@ -28,7 +28,7 @@ The website includes 8 sections:
 - Login
 - Location
 
-### Technologies
+## Technologies
 - HTML
 - CSS
 - Bootstrap 4
