@@ -32,7 +32,7 @@ The website includes 8 sections:
 - HTML
 - CSS
 - Bootstrap 4
-- Javascript
+- JavaScript
 - 3D card swiper
 
 ---
